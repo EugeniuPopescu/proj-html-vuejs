@@ -30,11 +30,13 @@ export default {
 <template>
 	<header>
 		<PageHeader />
+		
 	</header>
 
-	<main>
+	<!-- main -->
+	<section>
 		<PageMain />
-	</main>
+	</section>
 
 	<header>
 		<PageFooter />
@@ -47,11 +49,9 @@ export default {
 </style>
 
 <style scoped lang="scss">
-// importo variabili
-// @use './styles/partials/variables' as *;
-
-// ...qui eventuale SCSS di App.vue
 main {
 	padding: 1rem;
 }
+
+
 </style>

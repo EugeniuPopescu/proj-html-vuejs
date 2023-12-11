@@ -1,8 +1,13 @@
 <script>
+import AppJumbo from '../components/AppJumbo.vue';
 import { store } from "../store.js" //state management
 import register from "../debug" //per debuggare il componente da console
 
 export default {
+    components: {
+        AppJumbo,
+
+    },
     name: "PageMain",
     data() {
         return {
@@ -22,9 +27,7 @@ export default {
 </script>
 
 <template>
-    <div>
-        <h1>Sono un main!</h1>
-    </div>
+    <AppJumbo  />
 </template>
 
 <style scoped lang="scss">
