@@ -81,15 +81,15 @@ export default {
                 -->
                 
 
-                <div class="row d-flex justify-content-center z-99">
-                    <div class="col-9">
-                        <div class="text-center text-light">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-9 position-relative">
+                        <div class="text-center text-light z-99">
                             <span class="jumbo-span fw-semibold fs-4">Imagine, Create, Experience</span>
                             <h1>We Animate</h1>
                             <h1>With Ninja-Like Precision</h1>
                             <p class="fs-5">We are a character-driven animation studio striving to make high-quality animations.</p>
                         </div>
-                        <div class="text-center py-5">
+                        <div class="text-center py-3">
                             <a class="px-3" href="#StartAProject">
                                 <button class="btn" type="button">Start A Project</button>
                             </a>
@@ -99,18 +99,18 @@ export default {
                         </div>
                         
                         <!-- middle banner video -->
-                        <div class="middle-banner">
+                        <div class="middle-banner pt-5">
                             <img src="/public/assets/middle.png" alt="">
                         </div>
 
-                        <!-- white shape -->
-                        <div class="shape">
-                            <img src="/public/assets/bottom-shape.png" alt="">
-                        </div>
                     </div>
-
+                    
                 </div>
-
+                <!-- white shape -->
+                <div class="shape">
+                    <img src="/public/assets/bottom-shape.png" alt="">
+                </div>
+                
             </section>
         </div>
     </div>
@@ -167,14 +167,14 @@ a .btn:hover {
 
 /************* jumbotron **************/
 .jumbo {
-    padding-top: 5rem;
+    padding-top: 3rem;
 }
 .bg {
     background-image: url(/assets/banner-bg.png);
     background-size: cover;
     position: relative;
     margin-bottom: 200px;
-    height: 60rem;
+    height: 50rem;
 }
 
 .astronaut1 {
@@ -190,7 +190,7 @@ a .btn:hover {
     position: absolute;
     right: 3%;
     top: 30%;
-    animation: fly1 4s linear infinite;
+    animation: 4s linear infinite;
     animation-delay: 0.5s;
 }
 
@@ -204,7 +204,7 @@ a .btn:hover {
 }
 
 h1 {
-    font-size: 5rem;
+    font-size: 4rem;
     font-weight: 700;
 }
 
@@ -223,7 +223,7 @@ h1 {
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 16rem;
+    height: 10rem;
 }
 
 .shape img {
