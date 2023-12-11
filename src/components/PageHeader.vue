@@ -3,7 +3,7 @@ import { store } from "../store.js" //state management
 import register from "../debug" //per debuggare il componente da console
 
 export default {
-    name: "AppComponent",
+    name: "PageHeader",
     data() {
         return {
             store
@@ -11,7 +11,7 @@ export default {
     },
     methods: {
         doThings() {
-            console.log("AppComponent does things");
+            console.log("PageHeader does things");
         }
     },
     mounted() {
@@ -22,8 +22,8 @@ export default {
 </script>
 
 <template>
-    <div>
-        <h1>Sono un componente!</h1>
+    <div class="container">
+        <h1>header</h1>
     </div>
 </template>
 
@@ -31,5 +31,5 @@ export default {
 // importo variabili
 // @use './styles/partials/variables' as *;
 
-// ...qui eventuale SCSS di AppComponent
+// ...qui eventuale SCSS di PageHeader
 </style>
