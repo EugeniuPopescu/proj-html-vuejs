@@ -12,9 +12,12 @@ import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 
 /* import specific icons */
 import { faPlay } from "@fortawesome/free-solid-svg-icons";
+import { faFacebook } from "@fortawesome/free-brands-svg-icons";
+import { faInstagram } from "@fortawesome/free-brands-svg-icons";
+import { faTwitter } from "@fortawesome/free-brands-svg-icons";
 
 /* add icons to the library */
-library.add(faPlay);
+library.add(faPlay, faFacebook, faInstagram, faTwitter);
 
 window.vue = {};
 window.vue.App = createApp(App)
