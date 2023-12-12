@@ -1,13 +1,14 @@
 <script>
-import AppJumbo from '../components/AppJumbo.vue';
+import AppAnimation from '../components/AppAnimation.vue';
+import AppCount from '../components/AppCount.vue';
 import { store } from "../store.js" //state management
 import register from "../debug" //per debuggare il componente da console
 
 export default {
     components: {
-        AppJumbo,
-
-    },
+    AppAnimation,
+    AppCount
+},
     name: "PageMain",
     data() {
         return {
@@ -27,7 +28,9 @@ export default {
 </script>
 
 <template>
-    <AppJumbo  />
+    <AppAnimation  />
+    <AppCount  />
+
 </template>
 
 <style scoped lang="scss">
