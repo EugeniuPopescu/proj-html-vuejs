@@ -5,6 +5,7 @@ import AppWork from '../components/AppWork.vue';
 import AppProcess from '../components/AppProcess.vue';
 import AppTeam from '../components/AppTeam.vue';
 import AppClient from '../components/AppClient.vue';
+import AppNewsletter from '../components/AppNewsletter.vue';
 
 import { store } from "../store.js" //state management
 import register from "../debug" //per debuggare il componente da console
@@ -17,6 +18,7 @@ export default {
     AppProcess,
     AppTeam,
     AppClient,
+    AppNewsletter
 },
     name: "PageMain",
     data() {
@@ -43,6 +45,7 @@ export default {
     <AppProcess  />
     <AppTeam  />
     <AppClient  />
+    <AppNewsletter />
 
 </template>
 

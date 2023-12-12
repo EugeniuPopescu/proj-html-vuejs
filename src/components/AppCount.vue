@@ -58,7 +58,7 @@ export default {
             <img src="/public/assets/globe.png" alt="">
         </div>
 
-        <!-- top shape -->
+        <!-- bottom shape -->
         <div class="bottom-shape">
             <img src="/public/assets/shape-bottom.png" alt="">
         </div>
@@ -68,7 +68,7 @@ export default {
 <style scoped>
 .wrapper {
     margin-top: 4rem;
-    padding: 8rem 0;
+    padding: 7rem 0;
     background: url("/public/assets/counter-bg.png");
     background-size: cover;
     position: relative;
@@ -80,7 +80,7 @@ export default {
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 2;
+    z-index: 5;
     overflow: hidden;
 }
 
@@ -88,7 +88,7 @@ export default {
     position: absolute;
     bottom: 0;
     left: 0;
-    z-index: 2;
+    z-index: 5;
     width: 100%;
     overflow: hidden;
 }
@@ -97,12 +97,13 @@ export default {
     position: absolute;
     left: 50%;
     top: 50%;
-    max-width: 500px;
-    height: 500px;
+    max-width: 30rem;
+    height: 30rem;
     animation: coun 30s linear infinite;
     animation-delay: 0.3s;
     overflow: hidden;
     transform: translate(-50%, -50%);
+    z-index: 0;
 }
 
 .globe img {
@@ -112,9 +113,12 @@ export default {
 }
 
 h2 {
+    position: relative;
+    z-index: 2;
+
     font-size: 3rem;
     font-weight: 700;
-    color: #fff;
+    color: #ffffff;
 }
 
 .box {

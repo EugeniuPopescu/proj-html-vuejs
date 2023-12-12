@@ -5,3 +5,4 @@
     - mancano i fade in 
     - AppCount odometer
     -fare i btn
+    -caroselliiiiii
