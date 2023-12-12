@@ -68,7 +68,7 @@ export default {
 <style scoped>
 .wrapper {
     margin-top: 4rem;
-    padding: 10rem 0;
+    padding: 8rem 0;
     background: url("/public/assets/counter-bg.png");
     background-size: cover;
     position: relative;

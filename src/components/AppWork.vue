@@ -76,7 +76,7 @@ export default {
                 </div>
             </div>
             <!-- btn -->
-            <div class="d-flex justify-content-center my-5">
+            <div class="d-flex justify-content-center mt-5">
                 <a class="px-3" href="#Work">
                     <button class="btn1" type="button">See Our Work</button>
                 </a>
@@ -87,7 +87,7 @@ export default {
 
 <style scoped>
 .wrapper {
-    padding: 10rem 0;
+    padding-top: 7rem;
 }
 
 

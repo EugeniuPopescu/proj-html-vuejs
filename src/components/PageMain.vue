@@ -2,6 +2,10 @@
 import AppAnimation from '../components/AppAnimation.vue';
 import AppCount from '../components/AppCount.vue';
 import AppWork from '../components/AppWork.vue';
+import AppProcess from '../components/AppProcess.vue';
+import AppTeam from '../components/AppTeam.vue';
+import AppClient from '../components/AppClient.vue';
+
 import { store } from "../store.js" //state management
 import register from "../debug" //per debuggare il componente da console
 
@@ -9,7 +13,10 @@ export default {
     components: {
     AppAnimation,
     AppCount,
-    AppWork
+    AppWork,
+    AppProcess,
+    AppTeam,
+    AppClient,
 },
     name: "PageMain",
     data() {
@@ -33,6 +40,9 @@ export default {
     <AppAnimation  />
     <AppCount  />
     <AppWork  />
+    <AppProcess  />
+    <AppTeam  />
+    <AppClient  />
 
 </template>
 
