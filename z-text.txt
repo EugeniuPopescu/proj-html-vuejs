@@ -2,3 +2,4 @@
     - mancano le stelle 
     - mancano i pianeti 
     - play button
+    - mancano i fade in 
