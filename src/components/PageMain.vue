@@ -1,13 +1,15 @@
 <script>
 import AppAnimation from '../components/AppAnimation.vue';
 import AppCount from '../components/AppCount.vue';
+import AppWork from '../components/AppWork.vue';
 import { store } from "../store.js" //state management
 import register from "../debug" //per debuggare il componente da console
 
 export default {
     components: {
     AppAnimation,
-    AppCount
+    AppCount,
+    AppWork
 },
     name: "PageMain",
     data() {
@@ -30,6 +32,7 @@ export default {
 <template>
     <AppAnimation  />
     <AppCount  />
+    <AppWork  />
 
 </template>
 

@@ -67,7 +67,7 @@ export default {
 
 <style scoped>
 .wrapper {
-    margin: 4rem 0;
+    margin-top: 4rem;
     padding: 10rem 0;
     background: url("/public/assets/counter-bg.png");
     background-size: cover;
@@ -125,6 +125,10 @@ h2 {
     position: relative;
     transition: all 0.3s;
     z-index: 9;
+}
+
+.box:hover {
+    transform: skewY(4deg);
 }
 
 p {
