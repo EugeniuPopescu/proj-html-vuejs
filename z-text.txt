@@ -1,6 +1,7 @@
-    - play button header
-    - mancano i fade in 
-    - AppCount odometer
-    -fare i btn
-    -caroselliiiiii
-    -btn scroll to top
+- play button header
+header remain in page
+- mancano i fade in 
+- AppCount odometer
+-fare i btn
+-caroselliiiiii
+-btn scroll to top

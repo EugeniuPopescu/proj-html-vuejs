@@ -91,16 +91,19 @@ export default {
                 <div class="spaceX">
                     <img src="assets/light.png" alt="dots-left">
                 </div>
-                
+
                 <!-- center text of jumbotron -->
                 <div class="row d-flex justify-content-center ">
                     <div class="col-9 position">
+                        <!-- text -->
                         <div class="text-center text-white">
                             <span class="jumbo-span fw-semibold fs-4">Imagine, Create, Experience</span>
                             <h1>We Animate</h1>
                             <h1>With Ninja-Like Precision</h1>
-                            <p class="fs-5">We are a character-driven animation studio striving to make high-quality animations.</p>
+                            <p class="fs-5">We are a character-driven animation studio striving to make high-quality
+                                animations.</p>
                         </div>
+                        <!-- btn -->
                         <div class="text-center py-3">
                             <a class="px-3" href="#StartAProject">
                                 <button class="btn" type="button">Start A Project</button>
@@ -109,26 +112,32 @@ export default {
                                 <button class="btn1" type="button">Portfolio</button>
                             </a>
                         </div>
-                        
+
                         <!-- middle banner video -->
                         <div class="middle-banner pt-5">
                             <img src="/public/assets/middle.png" alt="">
+                            <!-- play btn -->
+                            <a href="https://www.youtube.com/watch?v=wYeFAlVC8qU"
+                                class="play-btn d-flex justify-content-center align-items-center">
+                                <font-awesome-icon class="play" icon="play" />
+                            </a>
                         </div>
 
                     </div>
-                    
+
                 </div>
                 <!-- white shape -->
                 <div class="shape">
                     <img src="/public/assets/bottom-shape.png" alt="">
                 </div>
-                
+
             </section>
         </div>
     </div>
 </template>
 
-<style scoped lang="scss">// importo variabili
+<style scoped lang="scss">
+// importo variabili
 
 li {
     list-style: none;
@@ -183,6 +192,7 @@ a .btn:hover {
 .jumbo {
     padding-top: 3rem;
 }
+
 .bg {
     background-image: url(/assets/banner-bg.png);
     background-size: cover;
@@ -199,10 +209,19 @@ a .btn:hover {
 // img background
 // astronauts
 @keyframes floating {
-    0% { transform: translate(0,  0px); }
-    50%  { transform: translate(0, 15px); }
-    100%   { transform: translate(0, -0px); }    
+    0% {
+        transform: translate(0, 0px);
+    }
+
+    50% {
+        transform: translate(0, 15px);
+    }
+
+    100% {
+        transform: translate(0, -0px);
+    }
 }
+
 .astronaut1 {
     position: absolute;
     z-index: 1;
@@ -212,6 +231,7 @@ a .btn:hover {
     height: 1rem;
     animation: floating 3s ease-in-out infinite
 }
+
 .astronaut2 {
     position: absolute;
     z-index: 1;
@@ -221,6 +241,7 @@ a .btn:hover {
     animation-delay: 0.5s;
     animation: floating 4s ease-in-out infinite
 }
+
 .astronauts {
     width: 15rem;
     height: 25rem;
@@ -232,6 +253,7 @@ a .btn:hover {
     top: 10%;
     left: 5%;
 }
+
 .stars-right {
     position: absolute;
     top: 10%;
@@ -242,13 +264,15 @@ a .btn:hover {
 // globs
 // globe1
 @keyframes rotation {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(359deg);
-  }
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(359deg);
+    }
 }
+
 .globe1 {
     position: absolute;
     top: 10%;
@@ -285,9 +309,17 @@ a .btn:hover {
 
 // spaceX
 @keyframes floating1 {
-    0% { transform: rotate(-10deg); }
-    50% { transform: rotate(30deg); }
-    100%   { transform: rotate(-10deg); }    
+    0% {
+        transform: rotate(-10deg);
+    }
+
+    50% {
+        transform: rotate(30deg);
+    }
+
+    100% {
+        transform: rotate(-10deg);
+    }
 }
 
 .spaceX {
@@ -312,10 +344,89 @@ h1 {
 }
 
 .middle-banner {
-    z-index: 99;
+    z-index: 9;
     width: 100%;
     position: relative;
 }
+
+// video
+
+.play-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #a616ea;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    animation: video 2s linear infinite;
+}
+
+/* triangle */
+.play-btn::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translateX(-40%) translateY(-50%);
+    transform: translateX(-40%) translateY(-50%);
+    transform-origin: center center;
+    width: 0;
+    height: 0;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 25px solid #fff;
+}
+
+/* pulse wave */
+.play-btn:before {
+    content: "";
+    position: absolute;
+    width: 7.5rem;
+    height: 7.5rem;
+    -webkit-animation: pulsate1 2s;
+    animation: pulsate1 2s;
+    animation-iteration-count: infinite;
+    opacity: 0;
+    border-radius: 50%;
+    border: 5px solid rgba(255, 255, 255, .75);
+}
+
+@-webkit-keyframes pulsate1 {
+    0% {
+        -webkit-transform: scale(0.6);
+        transform: scale(0.6);
+        opacity: 1;
+        box-shadow: inset 0px 0px 25px 3px rgba(255, 255, 255, 0.75), 0px 0px 25px 10px rgba(255, 255, 255, 0.75);
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 0;
+        box-shadow: none;
+
+    }
+}
+
+@keyframes pulsate1 {
+    0% {
+        -webkit-transform: scale(0.6);
+        transform: scale(0.6);
+        opacity: 1;
+        box-shadow: inset 0px 0px 25px 3px rgba(255, 255, 255, 0.75), 0px 0px 25px 10px rgba(255, 255, 255, 0.75);
+    }
+
+    100% {
+        -webkit-transform: scale(1, 1);
+        transform: scale(1);
+        opacity: 0;
+        box-shadow: none;
+
+    }
+}
+
 .middle-banner img {
     width: 100%;
     height: 100%;
@@ -332,7 +443,4 @@ h1 {
 .shape img {
     width: 100%;
     height: 100%;
-}
-
-
-</style>
+}</style>
