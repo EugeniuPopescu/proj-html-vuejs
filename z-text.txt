@@ -1,7 +1,4 @@
-- play button header
-header remain in page
+-header remain in page
 - mancano i fade in 
-- AppCount odometer
--fare i btn
 -caroselliiiiii
--btn scroll to top
+- AppCount odometer

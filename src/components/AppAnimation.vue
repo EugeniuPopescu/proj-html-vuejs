@@ -91,7 +91,6 @@ export default {
 <style scoped>
 .wrapper {
     padding: 10rem 0;
-    margin: 2rem 0;
 }
 
 h5 {

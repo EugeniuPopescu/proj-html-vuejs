@@ -12,14 +12,14 @@ import register from "../debug" //per debuggare il componente da console
 
 export default {
     components: {
-    AppAnimation,
-    AppCount,
-    AppWork,
-    AppProcess,
-    AppTeam,
-    AppClient,
-    AppNewsletter
-},
+        AppAnimation,
+        AppCount,
+        AppWork,
+        AppProcess,
+        AppTeam,
+        AppClient,
+        AppNewsletter
+    },
     name: "PageMain",
     data() {
         return {
@@ -29,29 +29,53 @@ export default {
     methods: {
         doThings() {
             console.log("PageMain does things");
-        }
+        },
+        scrollToTop() {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        },
+
     },
     mounted() {
         register(this); //per debuggare il componente da console
         this.doThings();
-    }
+        window.addEventListener("scroll", this.handleScroll);
+    },
+    beforeUnmount() {
+        window.removeEventListener("scroll", this.handleScroll);
+    },
 }
 </script>
 
 <template>
-    <AppAnimation  />
-    <AppCount  />
-    <AppWork  />
-    <AppProcess  />
-    <AppTeam  />
-    <AppClient  />
+    <!-- scroll up btn -->
+    <div ref="scrollTopButton">
+        <button class="scroll d-flex justify-content-center align-items-center" @click="scrollToTop">
+            <font-awesome-icon class="p-2" icon="arrow-up" />
+        </button>
+    </div>
+    <AppAnimation />
+    <AppCount />
+    <AppWork />
+    <AppProcess />
+    <AppTeam />
+    <AppClient />
     <AppNewsletter />
-
 </template>
 
 <style scoped lang="scss">
-// importo variabili
-// @use './styles/partials/variables' as *;
+.scroll {
+    background-color: #311852;
+    border-radius: .5rem;
+    position: fixed;
+    right: 1%;
+    bottom: 3%;
+    z-index: 999;
+    color: white;
+    border: none;
+}
 
-// ...qui eventuale SCSS di PageMain
+.scroll:hover {
+    background-color: #4d36dc;
+    transition: all 0.3s;
+}
 </style>

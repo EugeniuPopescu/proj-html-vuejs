@@ -28,7 +28,7 @@ export default {
     <div class="bg">
         <div class="container">
             <!-- header -->
-            <div class="row py-3">
+            <div class="row py-3 header-fixed">
                 <!-- logo -->
                 <div class="col-3">
                     <a href=".">
@@ -137,7 +137,14 @@ export default {
 </template>
 
 <style scoped lang="scss">
-// importo variabili
+// header fixed
+.menu-fixed {
+    position: sticky;
+    top:0;
+    padding:40px;
+    background: lightblue;
+    text-align: center;
+}
 
 li {
     list-style: none;
@@ -437,10 +444,10 @@ h1 {
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 10rem;
+    height: 10.5rem;
 }
 
 .shape img {
     width: 100%;
-    height: 100%;
+    height: 110%;
 }</style>
