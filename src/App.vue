@@ -21,27 +21,27 @@ export default {
                 },
                 {
                     text: "About Us",
-                    href: "#AboutUs",
+                    href: "https://pixner.net/anidio/carton-agency/about.html",
                 },
                 {
                     text: "Portfolio",
-                    href: "#Portfolio",
+                    href: "https://pixner.net/anidio/carton-agency/portfolio.html",
                 },
                 {
                     text: "Our Process",
-                    href: "#OurProcess",
+                    href: "https://pixner.net/anidio/carton-agency/process.html",
                 },
                 {
                     text: "Pricing",
-                    href: "#Pricing",
+                    href: "https://pixner.net/anidio/carton-agency/pricing.html",
                 },
                 {
                     text: "Blog",
-                    href: "#Blog",
+                    href: "https://pixner.net/anidio/carton-agency/blog.html",
                 },
                 {
                     text: "Contact",
-                    href: "#Contact",
+                    href: "https://pixner.net/anidio/carton-agency/contact.html",
                 },
             ]
 		}

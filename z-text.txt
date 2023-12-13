@@ -1,4 +1,3 @@
 -header remain in page
 - mancano i fade in 
--caroselliiiiii
 - AppCount odometer

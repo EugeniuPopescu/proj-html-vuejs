@@ -1,8 +1,11 @@
 <script>
-
+import ClientSwiper from '../components/ClientSwiper.vue';
 
 export default {
     name: "AppClient",
+    components: {
+        ClientSwiper
+    },
     data() {
         return {
         }
@@ -25,7 +28,7 @@ export default {
             </div>
             <!-- team -->
             <div class="row">
-                <h1>CAROSELLOOOOOO CLIENTS</h1>
+                <ClientSwiper />
             </div>
         </div>
     </div>

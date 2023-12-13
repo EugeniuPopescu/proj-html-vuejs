@@ -42,7 +42,7 @@ export default {
                             <a class="mx-2" v-for="link in txtLinks" :href="link.href">{{ link.text }}</a>
                         </li>
                         <li>
-                            <a href="#getAQuote">
+                            <a href="https://pixner.net/anidio/carton-agency/quote.html">
                                 <button class="btn" type="button">Get a Quote</button>
                             </a>
                         </li>
@@ -266,6 +266,7 @@ a .btn:hover {
     top: 10%;
     right: 1%;
     max-width: 750px;
+    overflow: hidden;
 }
 
 // globs
