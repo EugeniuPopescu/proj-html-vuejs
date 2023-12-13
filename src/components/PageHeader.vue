@@ -4,6 +4,9 @@ import register from "../debug" //per debuggare il componente da console
 
 export default {
     name: "PageHeader",
+    props: {
+        txtLinks: Object
+    },
     data() {
         return {
             store
@@ -34,27 +37,9 @@ export default {
                 </div>
                 <!-- links -->
                 <div class="col-9">
-                    <ul class="d-flex justify-content-between align-items-center relative">
+                    <ul class="d-flex justify-content-end align-items-center relative">
                         <li>
-                            <a href="#Home">Home</a>
-                        </li>
-                        <li>
-                            <a href="#AboutUs">About Us</a>
-                        </li>
-                        <li>
-                            <a href="#Portfolio">Portfolio</a>
-                        </li>
-                        <li>
-                            <a href="#OurProcess">Our Process</a>
-                        </li>
-                        <li>
-                            <a href="#Pricing">Pricing</a>
-                        </li>
-                        <li>
-                            <a href="#Blog">Blog</a>
-                        </li>
-                        <li>
-                            <a href="#Contact">Contact</a>
+                            <a class="mx-2" v-for="link in txtLinks" :href="link.href">{{ link.text }}</a>
                         </li>
                         <li>
                             <a href="#getAQuote">

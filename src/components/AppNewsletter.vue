@@ -31,7 +31,7 @@ export default {
             <div class="row d-flex justify-content-center align-items-center">
                 <div class="col-6 input">
                     <div class="my-3 position-relative d-flex justify-content-end align-items-center">
-                        <input type="email" class="form-control rounded-pill py-3" id="exampleFormControlInput1" placeholder="Eneter your email" required>
+                        <input type="email" class="form-control rounded-pill py-3" id="exampleFormControlInput1" placeholder="Enter your email" required>
                         <button class="btn rounded-pill fw-semibold mx-2">Submit</button>
                     </div>
                 </div>

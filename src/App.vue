@@ -13,7 +13,37 @@ export default {
 	},
 	data() {
 		return {
-			store
+			store,
+			links: [
+                {
+                    text: "Home",
+                    href: "#Home",
+                },
+                {
+                    text: "About Us",
+                    href: "#AboutUs",
+                },
+                {
+                    text: "Portfolio",
+                    href: "#Portfolio",
+                },
+                {
+                    text: "Our Process",
+                    href: "#OurProcess",
+                },
+                {
+                    text: "Pricing",
+                    href: "#Pricing",
+                },
+                {
+                    text: "Blog",
+                    href: "#Blog",
+                },
+                {
+                    text: "Contact",
+                    href: "#Contact",
+                },
+            ]
 		}
 	},
 	mounted() {
@@ -29,7 +59,7 @@ export default {
 
 <template>
 	<header>
-		<PageHeader />
+		<PageHeader :txtLinks="links" />
 		
 	</header>
 
@@ -39,7 +69,7 @@ export default {
 	</section>
 
 	<header>
-		<PageFooter />
+		<PageFooter :txtLinks="links" />
 	</header>
 </template>
 

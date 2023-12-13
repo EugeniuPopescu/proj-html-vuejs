@@ -127,7 +127,6 @@ p {
     position: absolute;
     top: 0;
     left: 0;
-    opacity: 0;
     transform: scale(0);
     visibility: hidden;
     border: 1px solid rgb(227, 228, 237);
@@ -162,7 +161,7 @@ p {
 }
 
 .btn1 {
-    border-radius: 100px;
+    border-radius: 10rem;
     border: 1px solid #ffdfed;
     font-weight: 600;
     transition: all 0.5s;

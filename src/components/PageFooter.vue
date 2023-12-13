@@ -4,6 +4,9 @@ import register from "../debug" //per debuggare il componente da console
 
 export default {
     name: "PageFooter",
+    props: {
+        txtLinks: Object
+    },
     data() {
         return {
             store
@@ -27,35 +30,18 @@ export default {
             <!-- footer top -->
             <div class="row">
                 <!-- logo -->
-                <div class="col-6">
+                <div class="col-5">
                     <a href=".">
                         <img src="/assets/footer-logo.png" alt="">
                     </a>
                 </div>
                 <!-- links -->
-                <div class="col-6">
-                    <ul class="d-flex justify-content-between align-items-center relative">
+                <div class="col-7">
+                    <ul class="d-flex justify-content-end align-items-center relative">
                         <li>
-                            <a href="#Home">Home</a>
+                            <a class="mx-2" v-for="link in txtLinks" :href="link.href">{{ link.text }}</a>
                         </li>
-                        <li>
-                            <a href="#AboutUs">About Us</a>
-                        </li>
-                        <li>
-                            <a href="#Portfolio">Portfolio</a>
-                        </li>
-                        <li>
-                            <a href="#OurProcess">Our Process</a>
-                        </li>
-                        <li>
-                            <a href="#Pricing">Pricing</a>
-                        </li>
-                        <li>
-                            <a href="#Blog">Blog</a>
-                        </li>
-                        <li>
-                            <a href="#Contact">Contact</a>
-                        </li>
+                        
                     </ul>
                 </div>
             </div>
