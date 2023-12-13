@@ -1,8 +1,6 @@
-1) headeer fatto senza tutti i particolari
-    - mancano le stelle header
-    - mancano i pianeti header
-    - play button
+    - play button header
     - mancano i fade in 
     - AppCount odometer
     -fare i btn
     -caroselliiiiii
+    -btn scroll to top

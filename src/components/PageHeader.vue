@@ -61,14 +61,41 @@ export default {
                     <img class="astronauts" src="/public/assets/right-man.png" alt="">
                 </div>
 
-                <!-- 
-                    globs 
-                -->
-                
+                <!-- stars -->
+                <!-- stars-left -->
+                <div class="stars-left">
+                    <img src="assets/dots-left.png" alt="dots-left">
+                </div>
+                <!-- stars-right -->
+                <div class="stars-right">
+                    <img src="assets/dots-right.png" alt="dots-left">
+                </div>
 
-                <div class="row d-flex justify-content-center">
-                    <div class="col-9 position-relative">
-                        <div class="text-center text-light z-99">
+                <!-- globs -->
+                <!-- globe1 -->
+                <div class="globe1">
+                    <img src="assets/globe1.png" alt="dots-left">
+                </div>
+
+                <!-- globe2 -->
+                <div class="globe2">
+                    <img src="assets/globe2.png" alt="dots-left">
+                </div>
+
+                <!-- globe3 -->
+                <div class="globe3">
+                    <img src="assets/globe3.png" alt="dots-left">
+                </div>
+
+                <!-- spaceX -->
+                <div class="spaceX">
+                    <img src="assets/light.png" alt="dots-left">
+                </div>
+                
+                <!-- center text of jumbotron -->
+                <div class="row d-flex justify-content-center ">
+                    <div class="col-9 position">
+                        <div class="text-center text-white">
                             <span class="jumbo-span fw-semibold fs-4">Imagine, Create, Experience</span>
                             <h1>We Animate</h1>
                             <h1>With Ninja-Like Precision</h1>
@@ -106,6 +133,8 @@ export default {
 li {
     list-style: none;
     text-decoration: none;
+    position: relative;
+    z-index: 1;
 }
 
 a {
@@ -124,7 +153,7 @@ a .btn {
     transition: all 0.5s;
     box-shadow: 0px 8px 18px 0px rgba(109, 100, 139, 0.61);
     color: black;
-    background: rgba(255, 255, 255, 0.8);
+    background: #ffdfed;
     padding: .7rem 2rem;
 }
 
@@ -162,27 +191,116 @@ a .btn:hover {
     height: 50rem;
 }
 
+.position {
+    position: relative;
+    z-index: 5;
+}
+
+// img background
+// astronauts
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 15px); }
+    100%   { transform: translate(0, -0px); }    
+}
 .astronaut1 {
     position: absolute;
+    z-index: 1;
     top: 30%;
     left: 3%;
     max-width: 10rem;
     height: 1rem;
+    animation: floating 3s ease-in-out infinite
 }
-
-
 .astronaut2 {
     position: absolute;
+    z-index: 1;
     right: 3%;
     top: 30%;
     animation: 4s linear infinite;
     animation-delay: 0.5s;
+    animation: floating 4s ease-in-out infinite
 }
-
 .astronauts {
     width: 15rem;
     height: 25rem;
 }
+
+// stars
+.stars-left {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+}
+.stars-right {
+    position: absolute;
+    top: 10%;
+    right: 1%;
+    max-width: 750px;
+}
+
+// globs
+// globe1
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+.globe1 {
+    position: absolute;
+    top: 10%;
+    left: 3%;
+    animation: rotation 4s infinite linear;
+}
+
+.globe1 img {
+    width: 7rem;
+}
+
+// globe2
+.globe2 {
+    position: absolute;
+    top: 20%;
+    right: 25%;
+    animation: rotation 5s infinite linear;
+}
+
+.globe2 img {
+    width: 5rem;
+}
+
+// globe3
+.globe3 {
+    position: absolute;
+    top: -18%;
+    right: 45%;
+}
+
+.globe3 img {
+    width: 15rem;
+}
+
+// spaceX
+@keyframes floating1 {
+    0% { transform: rotate(-10deg); }
+    50% { transform: rotate(30deg); }
+    100%   { transform: rotate(-10deg); }    
+}
+
+.spaceX {
+    position: absolute;
+    top: 12%;
+    right: 3%;
+    animation: floating1 5s ease-in-out infinite;
+}
+
+.spaceX img {
+    width: 5rem;
+}
+
 // text center
 .jumbo-span {
     color: #ff7a1f;
@@ -215,4 +333,6 @@ h1 {
     width: 100%;
     height: 100%;
 }
+
+
 </style>
