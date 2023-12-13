@@ -1,11 +1,10 @@
 <script>
-import ProcessSwiper from '../components/ProcessSwiper.vue';
-
+import SwiperProcess from '../components/SwiperProcess.vue';
 
 export default {
     name: "AppAnimation",
     components: {
-        ProcessSwiper
+        SwiperProcess
     },
     data() {
         return {
@@ -40,7 +39,7 @@ export default {
 
                     <!-- card -->
                     <div class="row">
-                        <ProcessSwiper />
+                        <SwiperProcess />
                     </div>
                     
                 </div>

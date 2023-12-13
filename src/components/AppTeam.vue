@@ -1,10 +1,10 @@
 <script>
-import TeamSwiper from '../components/TeamSwiper.vue';
+import SwiperTeam from '../components/SwiperTeam.vue';
 
 export default {
     name: "AppTeam",
     components: {
-        TeamSwiper
+        SwiperTeam
     },
     data() {
         return {
@@ -28,7 +28,7 @@ export default {
             </div>
             <!-- team -->
             <div class="row">
-                <TeamSwiper />
+                <SwiperTeam />
             </div>
         </div>
     </div>

@@ -1,10 +1,13 @@
 <script>
+import { store } from '../store';
+
 
 
 export default {
     name: "AppWork",
     data() {
         return {
+            store
         }
     },
     mounted() {
@@ -26,48 +29,12 @@ export default {
             </div>
             <!-- video -->
             <div class="row">
-                <!-- 1 -->
-                <div class="col-6">
+                
+                <div v-for="work in store.works" class="col-6">
                     <div class="box">
-                        <img src="assets/work1.png" alt="">
+                        <img :src="work.src" alt="">
                         <div class="video">
-                            <a href="https://www.youtube.com/watch?v=yFruBMVvCZQ"
-                                class="video-btn d-flex justify-content-center align-items-center">
-                                <font-awesome-icon class="video-btn" icon="play" />
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <!-- 2 -->
-                <div class="col-6">
-                    <div class="box">
-                        <img src="assets/work2.png" alt="">
-                        <div class="video">
-                            <a href="https://www.youtube.com/watch?v=yFruBMVvCZQ"
-                                class="video-btn d-flex justify-content-center align-items-center">
-                                <font-awesome-icon class="video-btn" icon="play" />
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <!-- 3 -->
-                <div class="col-6 mt-4">
-                    <div class="box">
-                        <img src="assets/work3.png" alt="">
-                        <div class="video">
-                            <a href="https://www.youtube.com/watch?v=yFruBMVvCZQ"
-                                class="video-btn d-flex justify-content-center align-items-center">
-                                <font-awesome-icon class="video-btn" icon="play" />
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <!-- 4 -->
-                <div class="col-6 mt-4">
-                    <div class="box">
-                        <img src="assets/work4.png" alt="">
-                        <div class="video">
-                            <a href="https://www.youtube.com/watch?v=yFruBMVvCZQ"
+                            <a :href="work.href"
                                 class="video-btn d-flex justify-content-center align-items-center">
                                 <font-awesome-icon class="video-btn" icon="play" />
                             </a>

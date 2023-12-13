@@ -12,7 +12,7 @@ import 'swiper/css/navigation';
 import { Autoplay, Navigation } from 'swiper/modules';
 
 export default {
-    name: "ClientSwiper",
+    name: "SwiperClient",
     components: {
         Swiper,
         SwiperSlide,

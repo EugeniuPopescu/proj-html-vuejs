@@ -1,8 +1,12 @@
 <script>
+
+import { store } from "../store.js" //state management
+
 export default {
     name: "AppCount",
     data() {
         return {
+            store
         }
     },
     mounted() {
@@ -22,32 +26,12 @@ export default {
             <div class="text-center">
                 <h2>Anidio Quick Facts</h2>
             </div>
+            
             <div class="row">
-                <div class="col-3">
+                <div v-for="count in store.counts" class="col-3">
                     <div class="box">
-                        <h2>700+</h2>
-                        <p>Project Done</p>
-                    </div>
-                </div>
-
-                <div class="col-3">
-                    <div class="box">
-                        <h2>250+</h2>
-                        <p>Happy Clients</p>
-                    </div>
-                </div>
-
-                <div class="col-3">
-                    <div class="box">
-                        <h2>25+</h2>
-                        <p>Team Members</p>
-                    </div>
-                </div>
-
-                <div class="col-3">
-                    <div class="box">
-                        <h2>12+</h2>
-                        <p>Years on the market</p>
+                        <h2>{{ count.number }}</h2>
+                        <p>{{ count.text }}</p>
                     </div>
                 </div>
             </div>
