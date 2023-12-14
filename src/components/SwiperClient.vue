@@ -1,4 +1,6 @@
 <script>
+import { store } from '../store';
+
 // Import Swiper Vue.js components
 import { Swiper, SwiperSlide } from 'swiper/vue';
 
@@ -19,6 +21,7 @@ export default {
     },
     data() {
         return {
+            store,
             modules: [Autoplay, Navigation]
         };
     },
@@ -28,92 +31,12 @@ export default {
 
 <template>
     <swiper :slidesPerView="6" :spaceBetween="2" :loop="true" :autoplay="{ delay: 2000, disableOnInteraction: false }" :modules="modules">
-        <swiper-slide class="text-center">
+        <swiper-slide v-for="client in store.clientsBoxs" class="text-center">
             <!-- box1 -->
             <div class="box text-center py-3">
                 <!-- img -->
                 <div class="box-img py-3">
-                    <img src="/public/assets/sponsor1.png" alt="">
-                </div>
-            </div>
-        </swiper-slide>
-
-        <swiper-slide class="text-center">
-            <!-- box1 -->
-            <div class="box text-center py-3">
-                <!-- img -->
-                <div class="box-img py-3">
-                    <img src="/public/assets/sponsor2.png" alt="">
-                </div>
-            </div>
-        </swiper-slide>
-
-        <swiper-slide class="text-center">
-            <!-- box1 -->
-            <div class="box text-center py-3">
-                <!-- img -->
-                <div class="box-img py-3">
-                    <img src="/public/assets/sponsor3.png" alt="">
-                </div>
-            </div>
-        </swiper-slide>
-
-        <swiper-slide class="text-center">
-            <!-- box1 -->
-            <div class="box text-center py-3">
-                <!-- img -->
-                <div class="box-img py-3">
-                    <img src="/public/assets/sponsor4.png" alt="">
-                </div>
-            </div>
-        </swiper-slide>
-
-        <swiper-slide class="text-center">
-            <!-- box1 -->
-            <div class="box text-center py-3">
-                <!-- img -->
-                <div class="box-img py-3">
-                    <img src="/public/assets/sponsor5.png" alt="">
-                </div>
-            </div>
-        </swiper-slide>
-
-        <swiper-slide class="text-center">
-            <!-- box1 -->
-            <div class="box text-center py-3">
-                <!-- img -->
-                <div class="box-img py-3">
-                    <img src="/public/assets/sponsor6.png" alt="">
-                </div>
-            </div>
-        </swiper-slide>
-
-        <swiper-slide class="text-center">
-            <!-- box1 -->
-            <div class="box text-center py-3">
-                <!-- img -->
-                <div class="box-img py-3">
-                    <img src="/public/assets/sponsor1.png" alt="">
-                </div>
-            </div>
-        </swiper-slide>
-
-        <swiper-slide class="text-center">
-            <!-- box1 -->
-            <div class="box text-center py-3">
-                <!-- img -->
-                <div class="box-img py-3">
-                    <img src="/public/assets/sponsor2.png" alt="">
-                </div>
-            </div>
-        </swiper-slide>
-
-        <swiper-slide class="text-center">
-            <!-- box1 -->
-            <div class="box text-center py-3">
-                <!-- img -->
-                <div class="box-img py-3">
-                    <img src="/public/assets/sponsor3.png" alt="">
+                    <img :src="client.src" alt="">
                 </div>
             </div>
         </swiper-slide>

@@ -35,12 +35,12 @@ export default {
                     </div>
                 </div>
             </div>
+            <!-- globe -->
+            <div class="globe">
+                <img src="/public/assets/globe.png" alt="">
+            </div>
         </div>
 
-        <!-- globe -->
-        <div class="globe">
-            <img src="/public/assets/globe.png" alt="">
-        </div>
 
         <!-- bottom shape -->
         <div class="bottom-shape">
@@ -77,16 +77,24 @@ export default {
     overflow: hidden;
 }
 
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(359deg);
+    }
+}
 .globe {
     position: absolute;
-    left: 50%;
-    top: 50%;
+    top: 1%;
+    right: 35%;
     max-width: 30rem;
     height: 30rem;
-    animation: coun 30s linear infinite;
+    animation: rotation 30s linear infinite;
     animation-delay: 0.3s;
     overflow: hidden;
-    transform: translate(-50%, -50%);
     z-index: 0;
 }
 

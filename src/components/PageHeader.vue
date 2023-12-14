@@ -195,6 +195,10 @@ a .btn:hover {
     padding: .7rem 2rem;
 }
 
+.btn1:hover {
+    background-color: #ffdfed;
+    color: #a616ea;
+} 
 /************* jumbotron **************/
 .jumbo {
     padding-top: 3rem;
