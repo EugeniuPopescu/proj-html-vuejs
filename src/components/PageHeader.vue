@@ -64,32 +64,32 @@ export default {
                 <!-- stars -->
                 <!-- stars-left -->
                 <div class="stars-left">
-                    <img src="assets/dots-left.png" alt="dots-left">
+                    <img src="/public/assets/dots-left.png" alt="dots-left">
                 </div>
                 <!-- stars-right -->
                 <div class="stars-right">
-                    <img src="assets/dots-right.png" alt="dots-left">
+                    <img src="/public/assets/dots-right.png" alt="dots-left">
                 </div>
 
                 <!-- globs -->
                 <!-- globe1 -->
                 <div class="globe1">
-                    <img src="assets/globe1.png" alt="dots-left">
+                    <img src="/public/assets/globe1.png" alt="dots-left">
                 </div>
 
                 <!-- globe2 -->
                 <div class="globe2">
-                    <img src="assets/globe2.png" alt="dots-left">
+                    <img src="/public/assets/globe2.png" alt="dots-left">
                 </div>
 
                 <!-- globe3 -->
                 <div class="globe3">
-                    <img src="assets/globe3.png" alt="dots-left">
+                    <img src="/public/assets/globe3.png" alt="dots-left">
                 </div>
 
                 <!-- spaceX -->
                 <div class="spaceX">
-                    <img src="assets/light.png" alt="dots-left">
+                    <img src="/public/assets/light.png" alt="dots-left">
                 </div>
 
                 <!-- center text of jumbotron -->
@@ -225,7 +225,7 @@ a .btn:hover {
     }
 
     50% {
-        transform: translate(0, 15px);
+        transform: translate(0, 30px);
     }
 
     100% {
